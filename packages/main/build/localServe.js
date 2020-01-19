@@ -12,10 +12,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/index.html'))
 })
 
-app.get('/dist/main.js', (req, res) => {
+app.get('/main.js', (req, res) => {
     console.log('localServe Got a request - url: ', req.url)
-    listDir('../dist')
-    res.sendFile(path.join(__dirname + '/../dist/main.js'))
+    listDir('.')
+    res.sendFile(path.join(__dirname + '/main.js'))
 })
 
 app.listen(port, () => console.log(`listening to port ${port}!`))

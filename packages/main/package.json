@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack-dev-server",
-    "start": "node build/localServe.js"
+    "start": "node serve/localServe.js"
   },
   "author": "",
   "license": "ISC",
@@ -49,6 +49,7 @@
     "path": "^0.12.7",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.1"
+    "webpack-dev-server": "^3.10.1",
+    "copy-webpack-plugin": "^5.1.1"
   }
 }

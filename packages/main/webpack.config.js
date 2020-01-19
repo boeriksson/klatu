@@ -1,10 +1,11 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'serve'),
         filename: 'main.js'
     },
     module: {
@@ -24,7 +25,10 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'build/index.html')
-        })
+        }),
+        new CopyPlugin([
+            { from: 'build/localServe.js', to: '.' },
+        ])
     ],
     mode: 'development'
 }
