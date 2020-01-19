@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  main:
+    build: packages/main
+    networks:
+      - external
+    ports:
+      - 3000:80
+
+networks:
+  external:
+  internal:

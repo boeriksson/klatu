@@ -13,3 +13,13 @@ lerna run build
 
 To run main locally: 
 lerna run dev --scope main --stream
+
+### Docker
+
+docker images
+
+Start image with bash prompt:
+docker run -it  klatu_main /bin/bash
+
+docker-compose up --build
+
