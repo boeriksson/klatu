@@ -9,27 +9,13 @@ const port = 80
 
 app.use(cors())
 
-app.get('/', (req, res) => {
-    console.log('localServe Got a request - url: ', req.url)
-    listDir('/')
-    res.sendFile(path.join(__dirname + '/index.html'))
-})
-
-app.get('/main.mjs', (req, res) => {
-    console.log('localServe Got a request - url: ', req.url)
-    listDir('.')
-    res.sendFile(path.join(__dirname + '/main.mjs'))
-})
-
-app.get('/es-module-shims.js', (req, res) => {
+app.get('/topmenu', (req, res) => {
     console.log('localServe Got a request - url: ', req.url)
     listDir('./serve')
-    res.sendFile(path.join(__dirname + '/es-module-shims.js'))
-})
-
-app.get('/system.js', (req, res) => {
-    console.log('localServe Got a request - url: ', req.url)
-    res.sendFile(path.join(__dirname + '/system.js'))
+    console.log('process.cwd()', process.cwd())
+    console.log('__dirname ', __dirname)
+    console.log('localpath: ', path.join(__dirname + '/serve/topMenu.js'))
+    res.sendFile(path.join(__dirname + '/serve/topMenu.mjs'))
 })
 
 app.listen(port, () => console.log(`listening to port ${port}!`))

@@ -1,6 +1,7 @@
 {
   "packages": [
-    "packages/main"
+    "packages/main",
+    "packages/topmenu"
   ],
   "version": "independent",
   "npmClient": "yarn",

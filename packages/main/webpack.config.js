@@ -30,5 +30,8 @@ module.exports = {
             { from: 'build/localServe.js', to: '.' },
         ])
     ],
+    externals: {
+        topmenu: 'topmenu'
+    },
     mode: 'development'
 }
