@@ -15,6 +15,13 @@ services:
     ports:
       - 3001:80
 
+  bundleserve:
+    build: packages/bundleserve
+    networks:
+      - external
+    ports:
+      - 3002:80
+
 networks:
   external:
   internal:

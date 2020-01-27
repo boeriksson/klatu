@@ -13,6 +13,7 @@ RUN npm install
 RUN npm run build
 
 COPY ./build/index.html ./serve
+COPY ./src/test.js ./serve
 COPY ./build/localServe.js ./serve
 COPY ./node_modules/systemjs/dist/system.js ./serve
 COPY /node_modules/es-module-shims/dist/es-module-shims.js ./serve

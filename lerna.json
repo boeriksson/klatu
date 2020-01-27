@@ -1,7 +1,8 @@
 {
   "packages": [
     "packages/main",
-    "packages/topmenu"
+    "packages/topmenu",
+    "packages/bundleserve"
   ],
   "version": "independent",
   "npmClient": "yarn",

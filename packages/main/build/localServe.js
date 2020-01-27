@@ -9,6 +9,8 @@ const port = 80
 
 app.use(cors())
 
+app.use(express.static('public'))
+
 app.get('/', (req, res) => {
     console.log('localServe Got a request - url: ', req.url)
     listDir('/')
@@ -30,6 +32,11 @@ app.get('/es-module-shims.js', (req, res) => {
 app.get('/system.js', (req, res) => {
     console.log('localServe Got a request - url: ', req.url)
     res.sendFile(path.join(__dirname + '/system.js'))
+})
+
+app.get('/test.js', (req, res) => {
+    console.log('localServe Got a request - url: ', req.url)
+    res.sendFile(path.join(__dirname + '/test.js'))
 })
 
 app.listen(port, () => console.log(`listening to port ${port}!`))

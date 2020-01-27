@@ -23,3 +23,11 @@ docker run -it  klatu_main /bin/bash
 
 docker-compose up --build
 
+In case docker space for images gets full -> "no space left on device"
+(OBS: removes all images)
+
+docker rmi $(docker images -aq --filter dangling=true)
+
+And then maybe -> docker container prune
+
+
