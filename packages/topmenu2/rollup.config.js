@@ -9,13 +9,13 @@ const rollupConfig = () => {
         output: [
             {
                 dir: 'serve',
-                entryFileNames: 'main.mjs',
+                entryFileNames: 'topMenu.mjs',
                 format: 'esm',
                 exports: 'named',
             },
             {
                 dir: 'serve',
-                entryFileNames: 'main.js',
+                entryFileNames: 'topMenu.js',
                 format: 'system',
                 exports: 'named',
             },
@@ -37,22 +37,17 @@ const rollupConfig = () => {
                 runtimeHelpers: true
             }),
             commonjs({
-                namedExports: {
-                    'node_modules/prop-types/index.js': ['PropTypes', 'elementType'],
-                    'node_modules/react-is/index.js': ['isFragment', 'isValidElementType', 'forwardRef'],
-                    'node_modules/react-transition-group/esm/utils/ChildMapping.js': [ 'Children', 'cloneElement', 'isValidElement' ],
-                    'node_modules/react/index.js': ['isValidElement', 'Children', 'cloneElement']
-                },
-                include: /node_modules/,
+                namedExports: {},
+                include: 'node_modules/**',
                 exclude: [
                     'node_modules/process-es6/**',
                 ],
             }),
             replace({
                 'process.env.NODE_ENV': JSON.stringify('development')
-            })
+            }),
         ],
-        external: ['react', 'react-dom', 'topmenu']
+        external: ['react', 'react-dom']
     })
     return createConfig()
 }

@@ -1,0 +1,21 @@
+{
+  "imports": {
+    "react-dom": "https://a1s.unicdn.net/bundle-store/kmf-vendor-pack/1.4.0/react-dom-62ebd804.system.min.js",
+    "kindred-ui-kit/engines": "https://a1s.unicdn.net/bundle-store/kindred-ui-kit/4.0.16/engines-c9d7e927.production.system.js",
+    "kindred-ui-kit/foundation": "https://a1s.unicdn.net/bundle-store/kindred-ui-kit/4.0.16/foundation-44cedbb1.production.system.js",
+    "kmf-appshell": "https://a1s.unicdn.net/bundle-store/kmf-appshell/1.0.0/4e20a658.min.js",
+    "kindred-ui-kit/patterns": "https://a1s.unicdn.net/bundle-store/kindred-ui-kit/4.0.16/patterns-27679974.production.system.js",
+    "@emotion/core": "https://a1s.unicdn.net/bundle-store/kmf-vendor-pack/1.4.0/emotion-core-b2eee582.system.min.js",
+    "react": "https://a1s.unicdn.net/bundle-store/kmf-vendor-pack/1.4.0/react-004aeb68.system.min.js",
+    "kaf-client": "https://a1s.unicdn.net/bundle-store/kaf-kmf-client/0.0.23/118e41a5.min.js",
+    "@emotion/styled-base": "https://a1s.unicdn.net/bundle-store/kmf-vendor-pack/1.4.0/emotion-styled-base-d1383a78.system.min.js",
+    "@emotion/styled": "https://a1s.unicdn.net/bundle-store/kmf-vendor-pack/1.4.0/emotion-styled-12b80843.system.min.js",
+    "kindred-ui-kit/primitives": "https://a1s.unicdn.net/bundle-store/kindred-ui-kit/4.0.16/primitives-d4e04a0f.production.system.js",
+    "kindred-ui-kit/globals": "https://a1s.unicdn.net/bundle-store/kindred-ui-kit/4.0.16/globals-3ce2d478.production.system.js",
+    "verification-notifications": "https://a1s.unicdn.net/bundle-store/verification/0.0.122/abb2f147.min.js",
+    "@reach/router": "https://a1s.unicdn.net/bundle-store/kmf-vendor-pack/1.4.0/reach-router-7c6f9601.system.min.js",
+    "@feis-vanilla/cms-intl": "https://a1s.unicdn.net/bundle-store/kmf-vendor-pack/1.4.0/cms-intl-34c941cf.system.min.js",
+    "kmf-sitedefinition": "https://a1s.unicdn.net/bundle-store/kmf-sitedefinition/1.0.5/92736b9d.min.js",
+    "verification": "https://a1s.unicdn.net/bundle-store/verification/0.0.122/e25d037c.min.js"
+  }
+}

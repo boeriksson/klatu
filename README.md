@@ -30,4 +30,8 @@ docker rmi $(docker images -aq --filter dangling=true)
 
 And then maybe -> docker container prune
 
+or to clear up completly ->
+docker container stop $(docker container ls -aq) 
+docker system prune --volumes 
+
 
