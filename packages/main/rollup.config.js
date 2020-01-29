@@ -39,7 +39,7 @@ const rollupConfig = () => {
             commonjs({
                 namedExports: {
                     'node_modules/prop-types/index.js': ['PropTypes', 'elementType'],
-                    'node_modules/react-is/index.js': ['isValidElementType', 'ForwardRef'],
+                    'node_modules/react-is/index.js': ['isFragment', 'isValidElementType', 'ForwardRef'],
                     'node_modules/react-transition-group/esm/utils/ChildMapping.js': [ 'Children', 'cloneElement', 'isValidElement' ],
                     'node_modules/react/index.js': ['isValidElement', 'Children', 'cloneElement']
                 },
@@ -52,7 +52,7 @@ const rollupConfig = () => {
                 'process.env.NODE_ENV': JSON.stringify('development')
             })
         ],
-        external: ['react', 'react-dom']
+        external: ['react', 'react-dom', 'topmenu']
     })
     return createConfig()
 }

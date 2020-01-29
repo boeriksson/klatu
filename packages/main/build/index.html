@@ -11,7 +11,8 @@
         {
           "imports": {
             "react": "http://localhost:3002/react.js",
-            "react-dom": "http://localhost:3002/react-dom.js"
+            "react-dom": "http://localhost:3002/react-dom.js",
+            "topmenu": "http://localhost:3001/topmenu"
           }
         }
 
@@ -23,21 +24,7 @@
         };
     </script>
 
-    <script type="module-shim">
-        console.log('alfaskop')
-        import ReactDOM from 'react-dom'
-        import React from 'react'
-
-        function start() {
-            console.log('starting main index.js')
-            ReactDOM.render(
-                React.createElement('div', null, 'Lena & Dennis är onda...'),
-                document.getElementById('app')
-            )
-        }
-
-        window.onload = start()
-    </script>
+    <script type="module-shim" src="Main.mjs"></script>
 
     <!--    <script type="module" src="main.mjs"></script>-->
 
