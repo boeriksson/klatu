@@ -1,11 +1,10 @@
-import React from 'react'
 import ReactDOM from 'react-dom'
-import Main from './Main'
+import React from 'react'
 
 function start() {
     console.log('starting main index.js')
     ReactDOM.render(
-        <Main/>,
+        <div>Lena & Dennis</div>,
         document.getElementById('app')
     )
 }

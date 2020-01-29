@@ -1,7 +1,7 @@
 // local mockserver
 
 const express = require('express')
-var cors = require('cors')
+const cors = require('cors')
 const path = require('path')
 const fs = require('fs')
 const app = express()
@@ -25,7 +25,7 @@ app.get('/main.mjs', (req, res) => {
 
 app.get('/es-module-shims.js', (req, res) => {
     console.log('localServe Got a request - url: ', req.url)
-    listDir('./serve')
+    listDir('.')
     res.sendFile(path.join(__dirname + '/es-module-shims.js'))
 })
 

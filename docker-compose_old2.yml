@@ -8,6 +8,13 @@ services:
     ports:
       - 3000:80
 
+  topmenu:
+    build: packages/topmenu
+    networks:
+      - external
+    ports:
+      - 3001:80
+
   bundleserve:
     build: packages/bundleserve
     networks:

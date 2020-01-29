@@ -10,9 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "esm-react": "^16.8.3",
     "express": "^4.17.1",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",

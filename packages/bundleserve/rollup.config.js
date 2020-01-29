@@ -1,11 +1,12 @@
 import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
+import replace from 'rollup-plugin-replace';
 
 export default [{
     input: 'src/bundle-react.js',
     output: {
-        file: 'serve/react.js',
+        file: 'serve/react-mine.js',
         format: 'esm'
     },
     plugins: [
@@ -35,12 +36,15 @@ export default [{
             exclude: [
                 'node_modules/process-es6/**',
             ],
+        }),
+        replace({
+            'process.env.NODE_ENV': JSON.stringify('development')
         })
     ]
 }, {
     input: 'src/bundle-react-dom.js',
     output: {
-        file: 'serve/react-dom.js',
+        file: 'serve/react-dom-mine.js',
         format: 'esm'
     },
     plugins: [
@@ -70,6 +74,9 @@ export default [{
             exclude: [
                 'node_modules/process-es6/**',
             ],
+        }),
+        replace({
+            'process.env.NODE_ENV': JSON.stringify('development')
         })
     ]
 }]

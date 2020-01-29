@@ -11,6 +11,8 @@ COPY src ./src
 RUN npm install
 RUN npm run build
 COPY ./localServe.js ./serve
+COPY ./node_modules/esm-react/src/react.js ./serve
+COPY ./node_modules/esm-react/src/react-dom.js ./serve
 
 RUN dir .
 RUN pwd
