@@ -18,6 +18,9 @@ lerna run dev --scope main --stream
 
 docker images
 
+Build single docker image: 
+docker build -t <choose a name> .
+
 Start image with bash prompt:
 docker run -it  klatu_main /bin/bash
 

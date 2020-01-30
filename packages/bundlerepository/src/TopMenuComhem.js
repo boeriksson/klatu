@@ -1,14 +1,12 @@
 import React from 'react'
 
-const TopMenuComviq = () => {
+const TopMenuComhem = () => {
     return (
         <div className="topnav">
-            <a className="active" href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <a className="active" href="#home">Other</a>
+            <a href="#news">Options</a>
         </div>
     )
 }
 
-export default TopMenuComviq
+export default TopMenuComhem

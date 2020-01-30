@@ -10,7 +10,7 @@ COPY src ./src
 COPY rollup.config.js ./
 RUN npm install
 RUN npm run build
-COPY localServe.js ./
+COPY localServe.js ./serve
 
 RUN dir .
 RUN pwd

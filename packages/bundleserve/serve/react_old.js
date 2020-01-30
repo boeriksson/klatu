@@ -654,7 +654,7 @@ var describeComponentFrame = function (name, source, ownerName) {
 
     {
       // In DEV, include code for a common special case:
-      // prefer "folder/index.js" instead of just "index.js".
+      // prefer "folder/TopMenuComviq.js" instead of just "TopMenuComviq.js".
       if (/^index\./.test(fileName)) {
         var match = path.match(BEFORE_SLASH_RE);
 

@@ -15,19 +15,19 @@ services:
     ports:
       - 3001:80
 
-  topmenu2:
-    build: packages/topmenu2
-    networks:
-      - external
-    ports:
-      - 3004:80
-
   bundleserve:
     build: packages/bundleserve
     networks:
       - external
     ports:
       - 3002:80
+
+  bundlerepository:
+    build: packages/bundlerepository
+    networks:
+      - external
+    ports:
+      - 3003:80
 
 networks:
   external:

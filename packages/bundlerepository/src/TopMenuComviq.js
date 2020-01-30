@@ -1,12 +1,14 @@
 import React from 'react'
 
-const TopMenu = () => {
-    console.log('I topmenu2...')
+const TopMenuComviq = () => {
     return (
         <div className="topnav">
-            Completly diffrent content..
+            <a className="active" href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
         </div>
     )
 }
 
-export default TopMenu
+export default TopMenuComviq
