@@ -1,3 +1,12 @@
+html {
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+}
+
+body {
+    height: 100%;
+}
+
 ul {
     display: block;
     list-style-type: disc;
@@ -26,4 +35,27 @@ ul.horizontal li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+.mainContainer {
+    height: 100%;
+}
+
+.mid {
+    height: 100%;
+    display: flex;
+}
+
+.midRight {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    height: 100%;
+}
+
+.midLeft {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 300px;
+    height: 100%;
 }

@@ -2,9 +2,9 @@ import React from 'react'
 
 export default () => (
     <div style={{
-        margin: '10px 0',
-        backgroundColor: 'yellow',
+        margin: '0',
+        backgroundColor: 'blue',
         color: 'white',
         height: '200px'
-    }}>Right</div>
+    }}>Right Comhej</div>
 )

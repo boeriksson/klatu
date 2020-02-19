@@ -11,7 +11,7 @@ var TopMenuComviq = function TopMenuComviq() {
     href: "#contact"
   }, React.createElement("a", null, "Contact")), React.createElement("li", {
     href: "#about"
-  }, React.createElement("a", null, "About")));
+  }, React.createElement("a", null, "Yadayada")));
 };
 
 export default TopMenuComviq;

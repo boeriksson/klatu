@@ -14,10 +14,14 @@ function getShim(brand) {
         "react": "http://localhost:3002/react.js",
         "react-dom": "http://localhost:3002/react-dom.js",
         "topmenu": "http://localhost:3003/bundles/topMenuComhem.js",
-        "random-widget": "http://localhost:3003/bundles/randomWidget.js"
+        "left": "http://localhost:3003/bundles/left-comhem.js",
+        "right": "http://localhost:3003/bundles/right-comhem.js",
+        "yet-another": "http://localhost:3003/bundles/yet-another.js"
     }
     const comviqImports = {
-        "topmenu": "http://localhost:3003/bundles/topMenuComviq.js"
+        "topmenu": "http://localhost:3003/bundles/topMenuComviq.js",
+        "left": "http://localhost:3003/bundles/left.js",
+        "right": "http://localhost:3003/bundles/right.js"
     }
 
     console.log('brand: ', brand)
@@ -44,10 +48,20 @@ app.get('/bundles/topMenuComviq.js', (req, res) => {
 
     res.sendFile(path.join(__dirname + '/serve/bundles/topMenuComviq.js'))
 })
-app.get('/bundles/randomWidget.js', (req, res) => {
-    console.log('topMenuComviq Got a request - url: ', req.url)
-
-    res.sendFile(path.join(__dirname + '/serve/bundles/randomWidget.js'))
+app.get('/bundles/left.js', (req, res) => {
+    res.sendFile(path.join(__dirname + '/serve/bundles/left.js'))
+})
+app.get('/bundles/right.js', (req, res) => {
+    res.sendFile(path.join(__dirname + '/serve/bundles/right.js'))
+})
+app.get('/bundles/left-comhem.js', (req, res) => {
+    res.sendFile(path.join(__dirname + '/serve/bundles/leftComhem.js'))
+})
+app.get('/bundles/right-comhem.js', (req, res) => {
+    res.sendFile(path.join(__dirname + '/serve/bundles/rightComhem.js'))
+})
+app.get('/bundles/yet-another.js', (req, res) => {
+    res.sendFile(path.join(__dirname + '/serve/bundles/yetAnother.js'))
 })
 
 app.listen(port, () => console.log(`listening to port ${port}!`))

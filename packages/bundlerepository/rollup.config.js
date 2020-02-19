@@ -51,7 +51,11 @@ const rollupConfig = () => {
     return [
         createConfig('TopMenuComviq', 'topMenuComviq'),
         createConfig('TopMenuComhem', 'topMenuComhem'),
-        createConfig('RandomWidget', 'randomWidget')
+        createConfig('Left', 'left'),
+        createConfig('Right', 'right') ,
+        createConfig('LeftComhem', 'leftComhem'),
+        createConfig('RightComhem', 'rightComhem'),
+        createConfig('YetAnother', 'yetAnother')
     ]
 }
 

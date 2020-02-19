@@ -6,7 +6,7 @@ const TopMenuComviq = () => {
             <li href="#home"><a>Home</a></li>
             <li href="#news"><a>News</a></li>
             <li href="#contact"><a>Contact</a></li>
-            <li href="#about"><a>About</a></li>
+            <li href="#about"><a>Yadayada</a></li>
         </ul>
     )
 }

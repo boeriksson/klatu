@@ -52,7 +52,7 @@ const rollupConfig = () => {
                 'process.env.NODE_ENV': JSON.stringify('development')
             })
         ],
-        external: ['react', 'react-dom', 'topmenu']
+        external: ['react', 'react-dom', 'topmenu', 'left', 'right', 'yet-another']
     })
     return createConfig()
 }
