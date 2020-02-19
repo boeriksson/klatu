@@ -8,8 +8,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node localServe",
-    "build": "rollup -c --environment INCLUDE_DEPS,BUILD:production",
-    "clean": "rm -rf dist/*"
+    "build": "rollup -c --environment INCLUDE_DEPS,BUILD:production"
   },
   "repository": {
     "type": "git",

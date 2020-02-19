@@ -2,12 +2,12 @@ import React from 'react'
 
 const TopMenuComviq = () => {
     return (
-        <div className="topnav">
-            <a className="active" href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-        </div>
+        <ul className="horizontal">
+            <li href="#home"><a>Home</a></li>
+            <li href="#news"><a>News</a></li>
+            <li href="#contact"><a>Contact</a></li>
+            <li href="#about"><a>About</a></li>
+        </ul>
     )
 }
 

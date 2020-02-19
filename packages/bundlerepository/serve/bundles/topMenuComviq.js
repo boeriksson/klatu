@@ -1,18 +1,17 @@
 import React from 'react';
 
 var TopMenuComviq = function TopMenuComviq() {
-  return React.createElement("div", {
-    className: "topnav"
-  }, React.createElement("a", {
-    className: "active",
+  return React.createElement("ul", {
+    className: "horizontal"
+  }, React.createElement("li", {
     href: "#home"
-  }, "Home"), React.createElement("a", {
+  }, React.createElement("a", null, "Home")), React.createElement("li", {
     href: "#news"
-  }, "News"), React.createElement("a", {
+  }, React.createElement("a", null, "News")), React.createElement("li", {
     href: "#contact"
-  }, "Contact"), React.createElement("a", {
+  }, React.createElement("a", null, "Contact")), React.createElement("li", {
     href: "#about"
-  }, "About"));
+  }, React.createElement("a", null, "About")));
 };
 
 export default TopMenuComviq;

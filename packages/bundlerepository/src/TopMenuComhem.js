@@ -2,9 +2,8 @@ import React from 'react'
 
 const TopMenuComhem = () => {
     return (
-        <div className="topnav">
-            <a className="active" href="#home">Other</a>
-            <a href="#news">Options</a>
+        <div style={{ backgroundColor: 'blue', color: 'white' }}>
+            <h1>ComHej</h1>
         </div>
     )
 }
