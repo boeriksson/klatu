@@ -2,8 +2,9 @@ import React from 'react'
 
 export default () => (
     <div style={{
-        backgroundColor: 'black',
+        margin: '10px 0',
+        backgroundColor: 'yellow',
         color: 'white',
         height: '200px'
-    }}>Random widget</div>
+    }}>Right</div>
 )
