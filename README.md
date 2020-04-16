@@ -37,4 +37,7 @@ or to clear up completly ->
 docker container stop $(docker container ls -aq) 
 docker system prune --volumes 
 
+To go into a running container: 
+docker exec -it <conteinerId> /bin/bash 
+
 
