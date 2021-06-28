@@ -5,7 +5,7 @@ import Main from './Main.js'
 function start() {
     console.log('starting main TopMenuComviq.js')
     ReactDOM.render(
-        <Main/>,      // <div>Lena och Dennis är onda...</div>,
+        <Main/>,
         document.getElementById('app')
     )
 }

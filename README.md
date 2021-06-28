@@ -40,4 +40,6 @@ docker system prune --volumes
 To go into a running container: 
 docker exec -it <conteinerId> /bin/bash 
 
+Run image "events" på 8080
+docker run -p 8080:8406 events
 
