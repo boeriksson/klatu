@@ -37,7 +37,7 @@
     "color": "^3.1.0",
     "cors": "^2.8.5",
     "es-module-shims": "^0.4.6",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "path": "^0.12.7",
     "rollup": "^1.23.0",
     "rollup-plugin-babel": "^4.3.3",
